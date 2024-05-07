@@ -43,9 +43,10 @@
     
 .landing-container{
     background-color:  #024059; 
-    background-image: linear-gradient(to bottom right, #2b2c68,#025959);     /*013A40 025959 79C7D9 C2EDF2*/
+    background-image: linear-gradient(to top, #2b2c68,#025959);     /*013A40 025959 79C7D9 C2EDF2*/
     background-repeat: no-repeat;
     padding-bottom: 150px;
+    height: 800px;
     
 
 }
@@ -131,10 +132,11 @@
 
 .about-container{
     height: 200px;
-    margin-top: 20px;
-    margin-left: 50px;
+    margin-top: 50px;
+    margin-left: 150px;
     margin-bottom: 400px;
-    width: 1000px;
+    width: 1200px;
+    
 }
 
 
