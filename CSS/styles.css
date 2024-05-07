@@ -132,11 +132,11 @@
 
 .about-container{
     height: 200px;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-left: 150px;
     margin-bottom: 400px;
     width: 1200px;
-    
+    padding-top: 50px;
 }
 
 
@@ -152,3 +152,20 @@
     
 }
 
+.skills-container{
+    margin-left: 150px;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.education-block{
+    padding-top: 150px;
+    padding-bottom: 300px;
+}
+
+.skills-block{
+    
+    
+    padding-bottom: 200px;
+}
