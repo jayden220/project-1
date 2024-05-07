@@ -161,11 +161,38 @@
 
 .education-block{
     padding-top: 150px;
-    padding-bottom: 300px;
+    padding-bottom: 400px;
 }
 
 .skills-block{
     
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+
+
+.projects-heading{
+    margin-left: 140px;
+    margin-top: 300px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+
+.testimonial-container{
+    padding-top: 100px;
     
-    padding-bottom: 200px;
+    margin: 300px 500px;
+}
+
+
+.image3{
+    height: 300px ;
+    width: 300px;
+    border-radius: 50%;
+}
+
+button{
+    color: #2b2c68;
 }
