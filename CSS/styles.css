@@ -173,26 +173,52 @@
 
 
 .projects-heading{
-    margin-left: 140px;
-    margin-top: 300px;
+    
+    
     padding-top: 100px;
     padding-bottom: 50px;
+    text-align: center;
 }
 
 
 .testimonial-container{
-    padding-top: 100px;
+    margin: 400px;
     
-    margin: 300px 500px;
+    
 }
 
-
-.image3{
-    height: 300px ;
-    width: 300px;
-    border-radius: 50%;
+.test-heading{
+    padding: ;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-right: 50px;
 }
 
-button{
-    color: #2b2c68;
+.img01{
+    height: 300px;
+    width: 600px;
+    padding-left: 120px;
+    opacity: .8;
+}
+
+#carouselExampleDark{
+    height: 650px;
+    
+}
+
+.carousel{
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
+.carousel-caption{
+    top: 100%;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-indicators{
+    bottom: 4rem;
 }
