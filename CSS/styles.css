@@ -161,11 +161,64 @@
 
 .education-block{
     padding-top: 150px;
-    padding-bottom: 300px;
+    padding-bottom: 400px;
 }
 
 .skills-block{
     
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+
+
+
+.projects-heading{
     
-    padding-bottom: 200px;
+    
+    padding-top: 100px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+
+.testimonial-container{
+    margin: 400px;
+    
+    
+}
+
+.test-heading{
+    padding: ;
+    text-align: center;
+    padding-bottom: 50px;
+    padding-right: 50px;
+}
+
+.img01{
+    height: 300px;
+    width: 600px;
+    padding-left: 120px;
+    opacity: .8;
+}
+
+#carouselExampleDark{
+    height: 650px;
+    
+}
+
+.carousel{
+    overflow: hidden;
+    padding-bottom: 4rem;
+}
+
+.carousel-caption{
+    top: 100%;
+}
+
+.carousel-inner{
+    overflow: visible;
+}
+
+.carousel-control-next, .carousel-control-prev, .carousel-indicators{
+    bottom: 4rem;
 }
