@@ -1,17 +1,36 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC');
 
+h1{
+    text-transform: uppercase;
+}
+
+ul{
+    list-style: none;
+}
+
+body{
+    background-image: linear-gradient(#5A585A, #090947)
+}
+
+
+
+.profile{
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    margin-left: 400px;
+}
+
 
 .comtainer-main{
     overflow: hidden;
 }
 
+.foot-container{
+    overflow: hidden;
+}
 
-
-
-
-
-
-    
+  
 .landing-container{
     /* background-color:  #024059;  */
     /* background-image: linear-gradient(to top, #2b2c68,#025959);     013A40 025959 79C7D9 C2EDF2 */
@@ -32,19 +51,38 @@
     color: beige;
     font-weight: 500;
     padding-left: 650px;
-    font-family: 'Amatic+SC', cursive;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-transform: uppercase;
+    
+
+    
+    position: relative;
+    animation-name: branding;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;       
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+
 }
 
+@keyframes branding{
+    
+        0%   { right:640px}
+        100%  { right:-1900px;}
+        /* 50%  { left:70px;} */
+        /* 75%  { left:300px;}
+        100% {margin-left:0px; } */
+      }
 
-@keyframes animate{
+
+/* @keyframes animate{
     0%,10%,100%{
         width: 50%;
     }
     70%,90%{
         width: 100%;
     }
-}
+} */
 
 /* .brand{
     position: relative;
@@ -62,7 +100,7 @@
     font-size: 17px;
     margin-top: 2px;
     text-transform: uppercase;
-    font-family: monospace;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     
 } 
 
@@ -82,13 +120,13 @@
 
 .heading{
     padding-top: 320px;
-    width: 200px;
+    width: 900px;
     
 
 }
 
 .contain-name{
-    width: 100%;
+    width: 1500px;
     font-family: initial;
     white-space: nowrap;
     overflow: hidden;
@@ -97,8 +135,13 @@
 
 }
 
+.name{
+    font-size: 48px;
+    font-weight: 600;
+}
+
 .info{
-    width: 600px;
+    width: 1600px;
 }
 
 @keyframes cursor{
@@ -125,6 +168,17 @@
 } */
 
 
+.card-title-academy, .card-title-school, .card-title-college{
+    padding-left: 25px;
+}
+
+.card-text-ts{
+    padding-left: 10px;
+}
+
+.card-body-skills{
+    text-align: center;
+}
 
 .card-image-ovrlay{
     height: 100px;
@@ -132,7 +186,7 @@
 
 .about-container{
     height: 200px;
-    margin-top: 10px;
+    margin-top: 90px;
     margin: auto;
     margin-bottom: 400px;
     width: 1200px;
@@ -169,26 +223,64 @@
     text-align: start;
 }
 
-.card-title-college{
+/* .card-title-college{
+    margin-top: -100px;
     text-align: center;
 }
 
+
+
 .card-title-academy{
     text-align: end;
+    margin-top: -100px;
+} */
+
+/* .card-text-college{
+    text-align: center;
+
 }
+.card-text-academy{
+    text-align: end;
+
+} */
 
 .skills-block{
     
     padding-top: 100px;
-    padding-bottom: 300px;
+    padding-bottom: 100px;
 }
 
+.list{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+.logos-1, .logos-2{
+    height: 300px;
+    width: 300px;
+    
+}
+
+.logos-1:hover{
+    box-shadow: 2px 4px 3px #FFA500;
+
+}
+
+.logos-2:hover{
+    box-shadow: 2px 4px 3px #2965f1 ;
+}
 
 
 .projects-heading{
     padding-top: 100px;
     padding-bottom: 50px;
     text-align: center;
+}
+.project-container{
+    padding-right: 200px;
 }
 
 .row{
@@ -241,37 +333,42 @@
 
 .contact-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+   
+    
 }
 
 .contact-heading{
     padding-top: 100px;
     text-align: center;
+    margin-bottom: 200px;
 }
 
 .form-container{
-    margin-top: 90px;
-    margin-left: 200px;
+    margin-top: 60px;
+    margin-left: 100px;
 }
 
 
 
  .contact-card{
-    margin-top: 100px;
+    margin-top: 10px;
     /* margin-right: 30px; */
-    padding-bottom: 500px;
+    padding-bottom: 200px;
+    margin-left: 200px;
 }
 
 .card-title{
     text-align: center;
-    padding-bottom: 70px;
+    padding-bottom: 20px;
 }
 
 
 .foot-container{
     padding: 50px 100px;
-    background-color: rgba(53, 223, 223, 0.366);
-    margin-top: 70px
+    background-color: rgba(160, 15, 93, 0.366);
+    margin-top: 150px
 }
 
 .footer-info{
@@ -279,27 +376,68 @@
     padding: left 100px; ;
 }
 
+
+
 .card-body-contact{
-    background-image: url(/images/tenor.gif);
+    background-color: #2234ae;
+    background-image: linear-gradient(315deg, #2234ae 0%, #191714 74%);
+    
     
 }
 
-/* img.gif{
-    position: absolute;
-    top: 100px;
-    opacity: .8px;
-    transform: translate(-50%,-50%);
-    filter: grayscale(50%);
-     */
+
+
+
+.card-title-contact{
+    color: aliceblue;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.card-text-contact{
+    color: white;
+    text-align: center;
+}
+
+.contact-me{
+    color: white;
+    text-align: center;
+}
+
+.contact-info{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.email{
+    color: white;
+    font: 1em sans-serif;
+    text-align: center;
+}
+
+.phone-number{
+    color: #270a98;
+    text-align: center;
+}
+
+
+.card-link{
+    text-align: center;
+}
+
+.contact-links{
+        
+    padding-left: 350px;
+}
 
 
 
 
 
 
-
-
- @media screen and (max-width:426px) /* mobile screen MUST MOVE TESTIMONIAL CAROUSEL TO MIDDLE */
+ @media screen and (max-width:425px) /* mobile screen MUST MOVE TESTIMONIAL CAROUSEL TO MIDDLE */
 {
     #navbar{
         height: 200px;
@@ -315,10 +453,11 @@
 
 
     .navbar-brand{
-        margin: 0 18px;
+       
         
         font-size: 28px;
         font-weight: 300px;
+        padding-right: 0px;
     }
 
     .contain-name{
@@ -330,56 +469,101 @@
     }
 
     .name{
-        font-size: 50px;
+        font-size: 30px;
+        
     }
 
     .info{
         padding-top:300px ;
         width: 650px;
         padding-left: 180px;
+        
     }
 
     .about-container{
         width: 1000px;
         height: 400px;
-       
+        margin-top: 300px;
         margin-bottom: 250px;
         margin-left: 60px;
         
     }
-    
-    
 
+    .skills-container{
+        gap: 100px;
+    }
     
+    .card-body{
+        margin-bottom: 100px;
+    }
+
+    .card .border-info .mb-3{
+        margin-top: 70px;
+    }
 
     .education-block{
         width: 900px;
         height: 300px;
-        /* margin-top: 100px; */
-        padding-bottom: 200px;
+         margin-top: 300px; 
+        margin-bottom: 200px;
         margin-left: 120px;
+        gap: 500px;
 
+    }
+
+    .card-title-academy{
+        padding-bottom: 2px;
+    }
+
+    .edu-block{
+        margin-bottom: 100px;
     }
 
     .skills-block{
         width: 900px;
         height: 300px;
-        padding-top: 200px;
+        padding-top: 300px;
         margin-left: 120px;
+        padding-bottom: 500px;
        
     }
 
+    .list{
+        display: flex;
+        flex-direction: row;
+        justify-items: center;
+        margin-top: 650px;
+        margin-left: 500px;
+        
+    }
+
     .projects-heading{
-        margin-left: 490px;
+        margin-left: 400px;
+        
+        
+        margin-top: 200px;
+        text-align: center;
+        text-transform: uppercase;
     }
 
     .row{
+         /* margin-top: 100px;  */
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 120px;
         position: relative;
         left: 120%;
+        /* justify-content: center; */
+        margin-right: 200px;
+        padding-right: 30px;
+        margin-top: -20px;
+        width: 600px;
+        font-size: 30px;
+        
 
+    }
+    .card-img-top{
+        height: 200px;
     }
     .projects .col{
         padding: 200px;
@@ -391,10 +575,19 @@
 
     }
 
-    /* #carouselExampleDark{
-        height: 650px;
-        padding-right: 300px;
-    } */
+    #carouselExampleDark{
+        height: 850px;
+        padding-right: 0px;
+         width: 300px;
+    }
+
+    .carousel-container{
+        margin-right: 1000px;
+    }
+
+    .carousel-caption{
+        font-size: 20px;
+    }
 
     /* .carouselExampleDark{
         display: flex;
@@ -404,12 +597,12 @@
 
     
 
-    .carousel-item .active{
+    /* .carousel-item .active{
         padding: 80px;
-    }
+    } */
 
     .test-heading{
-        padding-right: 350px;
+        padding-right: 380px;
         
     }
 
@@ -421,13 +614,15 @@
     }
 
     .contact-container{
-        display: grid;
+        display: grid !important;
         justify-content: space-between;
+        margin-bottom: 800px;
     }
 
     .form-container{
         margin-top: 90px;
         margin-left: 280px;
+        margin-bottom: 200px;
     }
 
     
@@ -439,15 +634,19 @@
 
      .contact-card{
         margin-left: 295px;
+        padding-bottom: 500px;
+    
         
     }
 
     .foot-container{
         width: 350%;
+        height: 400px;
     }
     .footer-info{
         text-align: right;
-        margin-left: 100px;
+        margin-left: 150px;
+        padding-top: 150px;
     }
 
     .input-group-text{
@@ -457,11 +656,229 @@
     
 }
 
-@media screen and (min-width:501px)  /*desktop screen*/
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:720px) and (min-width:450px)
 {
-    .contain-name{
-        width: 700px;
+
+
+
+    #navbar{
+        height: 200px;
+        
     }
+
+    .navbar-brand{
+        font-size: 35px;
+    }
+
+    .brand{
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+
+    .comtainer-main{
+        
+        margin-top: 400px;
+    }
+
+    /* .about-container{
+        width: 2900px;
+        height: 2000px;
+    } */
+
+    /* .about-body{
+        height: 1200px;
+    } */
+    .card-image-ovrelay{
+        width: 2000px;
+    }
+     .card-about{
+        width: 3200px;
+        height: 1100px;
+     }
+   
+    .card-text-about-2{
+        font-size: 4px;
+    }
+
+    .contain-name{
+        
+        padding-left: 750px;
+        padding-top: 20px;
+        width: 2200px;
+         
+        
+    }
+
+    .info{
+        padding-top:30px ;
+        width: 1650px;
+        padding-left: 870px;
+        
+    }
+
+    .card-body-edu{
+        height: 600px;
+        width: 2000px;
+        font-size: 15px;
+    }
+    .card-title-school{
+        padding-top: 5px;
+        padding-left: 5px;
+        font-size: 25px;
+    }
+
+    .card-title-college{
+        padding-left: 5px;
+        font-size: 25px;
+    }
+
+    .card-title-academy{
+        padding-left: 5px ;
+        font-size: 25px;
+    }
+    .card-text-edu{
+        font-size: 15px;
+    }
+
+    .skills-container{
+        margin-top: 800px;
+        margin-left: 720px;
+        width: 1200px;
+    }
+
+    .list{
+        align-items: center;
+        margin-left: 1300px;
+    }
+
+    .row{
+        display: grid;
+        gap: 100px;
+    
+        
+    }
+        .projects-heading{
+            padding-left: 125px;
+        }
+        .project-container{
+            margin-left: 200px;
+            padding-left: 400px;
+        }
+
+    .card-body-project{
+        width: 400px;
+        height: 250px;
+    }
+
+    .card-text-project{
+        font-size: 60px;
+    }
+
+    .card-img-top{
+        width: 1400px;
+        height: 800px;
+    }
+
+    .test-heading{
+        padding-left: 640px;  
+        font-size: 60px;
+    }
+
+    #carouselExampleDark{
+        height: 2250px;
+        padding-right: 0px;
+         width: 1100px;
+    }
+
+    .carousel-container{
+        margin-left: 300px;
+    }
+
+    .carousel-caption{
+        font-size: 60px;
+    }
+
+    .form-container{
+        margin-bottom: 800px;
+        
+       
+    }
+
+
+    .contact-heading{
+        margin-top: 900px;
+        margin-left: 1040px;
+        width: 600px;
+        font-size: 60px;
+    }
+    .card-card-contact{
+        margin-top: 100px;
+        width: 1200px;
+        height: 20px;
+    }
+
+    .contact-container{
+        display: grid !important;
+        justify-content: space-between;
+        padding-top: 650px;
+        margin-bottom: 2000px;
+        padding-left: 800px;
+    }
+
+    .card-body-contact{
+        padding-top: 20px;
+        width: 1200px;
+    }
+
+    .contact-me{
+        font-size: 45px;
+    }
+    .card-title-contact{
+        font-size: 50px;
+    }
+
+    .card-text-contact{
+        font-size: 35px;
+    }
+
+    .contact-info{
+        font-size: 40px;
+    }
+
+    .email, .phone-number{
+        font-size: 40px;
+    }
+
+    .contact-links{
+        
+        padding-left: 350px;
+    }
+    
+
+    /* .testimonial-container{
+            margin-left: 1050px;
+    } */
+    .foot-container{
+    
+        width: 410%;
+        height: 400px;
+    }
+
+    }
+
+    
+
+
     
 
 
@@ -471,4 +888,3 @@
 
 
 
-}
